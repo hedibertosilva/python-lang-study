@@ -27,7 +27,7 @@ def dec_aux(gretting, farewell):
     return dec_aux_decorator
 
 @dec_aux("Hi", "Bye")
-def f(x: int) -> None:
+def f(x: int) -> str:
     return f'f({x})'
 
 def main():
