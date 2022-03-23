@@ -31,12 +31,7 @@ def f(x: int) -> str:
     return f'f({x})'
 
 def main():
-    try:
-        print(f(0))
-    except:
-        return 1
-    else:
-        return 0
+    print(f(0))
 
 
 if __name__ == '__main__':
