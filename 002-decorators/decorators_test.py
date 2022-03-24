@@ -7,7 +7,7 @@ import decorators
 
 
 def test_normal_decoration():
-    """ Testing normal decoration. """
+    """ Testing normal decorator. """
     @decorators.dec
     def g(x: int) -> str:
         return f'g({x})'
@@ -16,7 +16,7 @@ def test_normal_decoration():
 
 
 def test_decoration_with_params(capsys):
-    """ Testing decoration with extra parameters. """
+    """ Testing decorator with extra parameters. """
     @decorators.dec_aux("Hello", "Good Bye")
     def h(x: int) -> str:
         return f'h({x})'
