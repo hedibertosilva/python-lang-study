@@ -36,10 +36,11 @@ def dec_aux(gretting: Any, farewell: Any) -> Callable:
             Returns:
                 Callable: the inner function.
         """
-        @functools.wraps(func) # The functools.wraps preserve the initial props.
+        @functools.wraps(func)  # to preserve the initial props.
         def dec_aux_inner(*args: tuple, **kwargs: dict) -> Any:
             """ It's responsible for receive the input parameters to the original
-                function, make something with them, and return the results from original function.
+                function, make something with them, and return the results from
+                original function.
 
                 Args:
                     args (tuple)
