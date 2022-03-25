@@ -8,6 +8,15 @@ from typing import Any
 from typing import Callable
 
 
+class MyProperty:
+    """ Class Property """
+    def __init__(self, func):
+        self._func = func
+
+    def __get__(self, obj, owner=None):
+        return self._func(obj)
+
+
 def dec(func: Callable) -> Callable:
     @functools.wraps(func)
     def dec_inner(*args: tuple, **kwargs: dict) -> str:
