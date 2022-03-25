@@ -5,6 +5,7 @@
     https://www.youtube.com/watch?v=orp6bhe4i00&list=PLWBKAf81pmOaP9naRiNAqug6EBnkPakvY&index=6
 """
 from functools import cached_property
+from typing import List
 
 
 class Location:
@@ -31,7 +32,7 @@ class Location:
         return [self.x, self.y]
 
     @loc.setter
-    def loc(self, loc) -> None:
+    def loc(self, loc: List[int, int]) -> None:
         self.x , self.y = loc
 
     @loc.deleter
@@ -50,5 +51,5 @@ class Location:
     def move_down(self) -> None:
         self.y -= 1
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"{type(self).__name__}({self.x}, {self.y})"
