@@ -25,3 +25,14 @@ Python Studies
 - Functools Wraps
 - Pytest:
   - capsys
+
+#### :pushpin:	005 - Property
+
+:brazil: Um simples estudo do uso da função de propriedades e seus derivados (setter, getter e deleter). Além disso, foi aplicado o conceito de cache sobre propriedades.
+:us: It's a simple study about property method and yours variations (setter, getter and deleter). In addition, it was applied cached property.
+
+- Annotations
+- Functools "cached_property"
+- @property
+  - setter
+  - deleter
